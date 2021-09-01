@@ -32,3 +32,17 @@ n = ((8+2-4)**2 * 5+8+7/2 - 30*5) / 2*5-3
 m = z**2 * 3+n
 y = ((((z+2-n)**2 * m+8/2-30) / 2*5-3)**5 + 15*3-9/3)**2 - 5/4
 print(f"EL valor de Y en el 3er punto es de: {y}")
+
+# --- SEGUNDA SECCIÓN ---
+
+# 1. Haga un algoritmo que calcule la masa de la siguiente fórmula:
+# Masa = (presión * volúmen) / (0.37 * (temperatura + 460))
+
+presion = float(input("Ingrese la presión: "))
+volumen = float(input("Ingrese el volumen: "))
+temperatura = float(input("Ingrese la temperatura: "))
+masa = (presion * volumen) / (0.37 * (temperatura + 460))
+print(f"Con una presion de {presion}")
+print(f"Con un volumen de {volumen}")
+print(f"Y una temperatura de {temperatura}")
+print(f"El resultado de la masa es igual a {masa}")
