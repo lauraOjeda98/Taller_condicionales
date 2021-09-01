@@ -46,3 +46,11 @@ print(f"Con una presion de {presion}")
 print(f"Con un volumen de {volumen}")
 print(f"Y una temperatura de {temperatura}")
 print(f"El resultado de la masa es igual a {masa}")
+
+# 2. Calcular el número de pulsaciones que una persona debe tener por
+# cada 10 segundos de ejercicio, si la fórmula es:
+# Num. Pulsaciones = (200 – edad) /10.
+
+edad = int(input("Ingrese su edad: "))
+num_pulsacion = (200 - edad) / 10
+print(f"El número de pulsaciones cada 10 seg debe ser de: {num_pulsacion}")
