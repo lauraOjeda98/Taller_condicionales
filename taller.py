@@ -77,8 +77,8 @@ meses = float(input("Ingrese el número de meses: "))
 montoAhorrado = 0.015*saldoInicial*meses
 saldoFinal = saldoInicial+montoAhorrado
 
-print(f"El monto ahorrado es de: {montoAhorrado}")
-print(f"El saldo final es de: {saldoFinal}")
+print(f"El monto ahorrado es de: ${montoAhorrado:,}")
+print(f"El saldo final es de: ${saldoFinal:,}")
 
 # 5. Una empresa le hace los siguientes descuentos sobre el sueldo base
 # a sus trabajadores: 1% por ley de politica pública, 4% por seguro
@@ -93,8 +93,22 @@ seguroForzoso = sueldo*0.005
 ahorro = sueldo*0.05
 montoTotal = sueldo - politica - seguroSocial - seguroForzoso - ahorro
 
-print(f"El monto a descontar por la ley politica pública es de: {politica}")
-print(f"El monto a descontar por el seguro social es de: {seguroSocial}")
-print(f"El monto a descontar por seguro forzoso es de: {seguroForzoso}")
-print(f"El monto a descontar por caja de ahorro es de: {ahorro}")
-print(f"El monto total a pagar al trabajador es de: {montoTotal}")
+print(f"El monto a descontar por la ley politica pública es de: ${politica:,}")
+print(f"El monto a descontar por el seguro social es de: ${seguroSocial:,}")
+print(f"El monto a descontar por seguro forzoso es de: ${seguroForzoso:,}")
+print(f"El monto a descontar por caja de ahorro es de: ${ahorro:,}")
+print(f"El monto total a pagar al trabajador es de: ${montoTotal:,}")
+
+# 6. El periódico el Informador cobra por un aviso clasificado un monto
+# que depende del número de palabras, tamaño en cetímetros y
+# número de colores. Cada palabra tiene un costo de $20.000, cada
+# centímetro tiene un costo de $15.000 y cada color tiene un costo de
+# $25.000. Realice un algoritmo que determine el monto a pagar por un
+# aviso clasificado.
+
+numeroPalabras = float(input("Ingrese número de palabras en total: "))
+tamaño = float(input("Ingrese tamaño en cm en total: "))
+numeroColores = float(input("Ingrese número de colores en total: "))
+montoPagar = (numeroPalabras*20000) + (tamaño*15000) + (numeroColores*25000)
+
+print(f"El monto total a pagar por el anuncio es de: ${montoPagar:,}")
