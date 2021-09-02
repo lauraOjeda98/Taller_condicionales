@@ -79,3 +79,22 @@ saldoFinal = saldoInicial+montoAhorrado
 
 print(f"El monto ahorrado es de: {montoAhorrado}")
 print(f"El saldo final es de: {saldoFinal}")
+
+# 5. Una empresa le hace los siguientes descuentos sobre el sueldo base
+# a sus trabajadores: 1% por ley de politica pública, 4% por seguro
+# social, 0.5% por seguro forzoso y 5% por caja de ahorro. Realice un
+# algoritmo que determine el monto de cada descuento y el monto total
+# a pagar al trabajador
+
+sueldo = float(input("Ingrese el saldo base: "))
+politica = sueldo*0.01
+seguroSocial = sueldo*0.04
+seguroForzoso = sueldo*0.005
+ahorro = sueldo*0.05
+montoTotal = sueldo - politica - seguroSocial - seguroForzoso - ahorro
+
+print(f"El monto a descontar por la ley politica pública es de: {politica}")
+print(f"El monto a descontar por el seguro social es de: {seguroSocial}")
+print(f"El monto a descontar por seguro forzoso es de: {seguroForzoso}")
+print(f"El monto a descontar por caja de ahorro es de: {ahorro}")
+print(f"El monto total a pagar al trabajador es de: {montoTotal}")
