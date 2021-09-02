@@ -159,3 +159,21 @@ ivaFotos = valorFotos * 0.16
 valorTotal = valorFotos + ivaFotos
 
 print(f"El monto total por el rollo es de: ${valorTotal:,}")
+
+# 11. En un hospital existen tres áreas: Ginecología, Pediatría y
+# Traumatología. El presupuesto anual del hospital se reparte conforme a la
+# siguiente tabla: Area | Porcentaje Presupuestal
+# Ginecología | 40%
+# Traumatología | 30%
+# Pediatría | 30%
+# Obtener la cantidad de dinero que recibirá cada área, para cualquier
+# monto presupuestal.
+
+montoPresupuestal = float(input("Ingrese el monto presupuestal: "))
+ginecologia = montoPresupuestal * 0.4
+traumatologia = montoPresupuestal * 0.3
+pediatria = montoPresupuestal * 0.3
+
+print(f"El monto para ginecología es de: ${ginecologia:,}")
+print(f"El monto para traumatología es de: ${traumatologia:,}")
+print(f"El monto para pedriatría es de: ${pediatria:,}")
