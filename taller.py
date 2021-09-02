@@ -122,4 +122,17 @@ años = int(input("Ingrese número de años laborando en la empresa: "))
 if años >= 1:
     bono = 100000
     bonoFinal = ((años-1)*120000) + bono
-print(f"El monto del bono es de: {bonoFinal}")
+print(f"El monto del bono es de: ${bonoFinal:,}")
+
+# 8. Una Universidad le paga a sus profesores $20.000 la hora y le hace
+# un descuento del 5% por concepto de caja de ahorro. Determine el
+# monto del descuento y el monto total a pagar al profesor.
+
+horasLaborando = float(input("Ingrese el número de horas de trabajo: "))
+monto = horasLaborando*20000
+descuentoAhorro = monto*0.05
+totalPago = monto - descuentoAhorro
+
+print(f"El salario por {horasLaborando} horas es de: ${monto:,}")
+print(f"El monto de descuento es de: ${descuentoAhorro:,}")
+print(f"El monto de total a pagar al profesor es de: ${totalPago:,}")
