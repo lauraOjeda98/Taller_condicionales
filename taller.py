@@ -67,3 +67,15 @@ total = inversion1 + inversion2 + inversion3
 print(f"El porcentaje por la 1era persona es de: {(inversion1/total)*100}%")
 print(f"El porcentaje por la 2da persona es de: {(inversion2/total)*100}%")
 print(f"El porcentaje por la 3era persona es de: {(inversion3/total)*100}%")
+
+# 4. Un banco da a sus ahorradores un interes de 1.5% sobre el monto
+# ahorrado. Teniendo como dato de entrada el saldo inicial del
+# ahorrador determine el saldo final.
+
+saldoInicial = float(input("Ingrese su saldo inicial: "))
+meses = float(input("Ingrese el número de meses: "))
+montoAhorrado = 0.015*saldoInicial*meses
+saldoFinal = saldoInicial+montoAhorrado
+
+print(f"El monto ahorrado es de: {montoAhorrado}")
+print(f"El saldo final es de: {saldoFinal}")
