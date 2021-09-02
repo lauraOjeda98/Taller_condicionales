@@ -54,3 +54,16 @@ print(f"El resultado de la masa es igual a {masa}")
 edad = int(input("Ingrese su edad: "))
 num_pulsacion = (200 - edad) / 10
 print(f"El número de pulsaciones cada 10 seg debe ser de: {num_pulsacion}")
+
+# 3. Tres personas deciden invertir su dinero para fundar una empresa.
+# Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje
+# que cada quien invierte con respecto a la cantidad total invertida.
+
+inversion1 = float(input("Ingrese la inversión de la 1era persona: "))
+inversion2 = float(input("Ingrese la inversión de la 2da persona: "))
+inversion3 = float(input("Ingrese la inversión de la 3era persona: "))
+total = inversion1 + inversion2 + inversion3
+
+print(f"El porcentaje por la 1era persona es de: {(inversion1/total)*100}%")
+print(f"El porcentaje por la 2da persona es de: {(inversion2/total)*100}%")
+print(f"El porcentaje por la 3era persona es de: {(inversion3/total)*100}%")
