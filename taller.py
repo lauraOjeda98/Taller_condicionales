@@ -205,3 +205,17 @@ ivaTour = tour * 0.12
 montoTour = tour + ivaTour
 
 print(f"El monto del tour por Cartagena es de: ${montoTour:,}")
+
+# 14. Un Hotel 5 Estrellas de Santa Marta tiene una promoción para sus
+# clientes. Cobra por una habitación $100.000 el primer día y por el
+# resto $200.000 por día. Realice un algoritmo que determine el valor
+# total a pagar por la habitación si la estadía fue de varios días.
+
+diasEstadia = int(input("Ingrese número de días de estadía: "))
+
+if diasEstadia > 1:
+    totalHab = ((diasEstadia - 1) * 200000) + 100000
+else:
+    totalHab = 100000
+
+print(f"El total a pagar por la habitación es de: ${totalHab:,}")
