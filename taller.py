@@ -146,4 +146,16 @@ montoInicial = float(input("Ingrese el monto inical de la tarjeta: "))
 montoFinal = float(input("Ingrese el monto final de la tarjeta: "))
 costoLlamada = (montoInicial - montoFinal) + (montoInicial - montoFinal)*1.2
 
-print(f"EL costo de la llamada es de: ${costoLlamada:,}")
+print(f"El costo de la llamada es de: ${costoLlamada:,}")
+
+# 10. En una fototienda cobran por el revelado de un rollo $1.500 por cada
+# foto. Realice un algoritmo que determine el monto a pagar por un
+# revelado completo sabiendo que adiconalmente le cobran el IVA
+# (16%).
+
+CantFotos = int(input("Ingrese la cantidad de fotos en el rollo: "))
+valorFotos = CantFotos * 1500
+ivaFotos = valorFotos * 0.16
+valorTotal = valorFotos + ivaFotos
+
+print(f"El monto total por el rollo es de: ${valorTotal:,}")
