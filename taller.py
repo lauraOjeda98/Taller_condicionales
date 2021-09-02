@@ -192,3 +192,16 @@ elif totalPeliculas == 1:
     montoPeliculas = diasAlquiler * 1500
 
 print(f"El monto total de alquiler es de: ${montoPeliculas:,}")
+
+# 13. Una Agencia de viajes cobra por un Tour a Cartagena $25.000
+# diarios por persona. Realice un algoritmo que determine el monto a
+# pagar por una familia que desee realizar dicho Tour sabiendo que
+# también cobran el 12% de IVA.
+
+cantPersonas = int(input("Ingrese número total de personas: "))
+diasTour = int(input("Ingrese número de días de tour: "))
+tour = (cantPersonas * 25000 * diasTour)
+ivaTour = tour * 0.12
+montoTour = tour + ivaTour
+
+print(f"El monto del tour por Cartagena es de: ${montoTour:,}")
