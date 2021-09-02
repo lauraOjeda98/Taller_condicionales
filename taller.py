@@ -136,3 +136,14 @@ totalPago = monto - descuentoAhorro
 print(f"El salario por {horasLaborando} horas es de: ${monto:,}")
 print(f"El monto de descuento es de: ${descuentoAhorro:,}")
 print(f"El monto de total a pagar al profesor es de: ${totalPago:,}")
+
+# 9. Un centro de comunicaciones alquilan tarjetas para realizar llamadas
+# y cobran el monto consumido de la tarjeta mas un recargo del 20%.
+# Teniendo como dato de entrada el monto inicial y el monto final de la
+# tarjeta, determine el costo de la llamada.
+
+montoInicial = float(input("Ingrese el monto inical de la tarjeta: "))
+montoFinal = float(input("Ingrese el monto final de la tarjeta: "))
+costoLlamada = (montoInicial - montoFinal) + (montoInicial - montoFinal)*1.2
+
+print(f"EL costo de la llamada es de: ${costoLlamada:,}")
